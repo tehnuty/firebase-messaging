@@ -149,6 +149,5 @@ def send_notification(push_token=None, push_topic=None, title=None, body=None, u
 
     # Send a message to devices subscribed to the combination of topics
     # specified by the provided condition.
-    logging.error(payload)
     response = messaging.send(message)
     return response
